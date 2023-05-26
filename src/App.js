@@ -7,6 +7,7 @@ function App() {
     <Router>
       <Navbar/>
       <Routes>
+        <Route path="/" element={<Home />}/>
         <Route path="/Portfolio" element={<Home />} />
       </Routes>
     </Router>
