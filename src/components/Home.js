@@ -1,5 +1,7 @@
 import React from 'react';
 import pfp from '../assets/pfp.png'
+import {BsLinkedin} from 'react-icons/bs'
+import {FaGithubSquare} from 'react-icons/fa'
 
 
 const Home = () => {
@@ -30,6 +32,10 @@ const Home = () => {
                     <ul className='relative ml-[600px] bottom-[75px]'>
                         <li className='text-4xl'>Hey, thanks for stopping by! </li>
                         <span className='mt-7 block w-[800px]'>I am a recent graduate of Hunter College, where I earned a Bachelor of Arts degree in computer science. My aspiration is to leverage my skills and knowledge as a software engineer in a dynamic and challenging role within a renowned tech company.</span>
+                    </ul>
+                    <ul className='ml-[600px]'>
+                        <a href='https://www.linkedin.com/in/jay-liang-205420197/' className=' text-red-500 hover:text-blue-500 transition-colors duration-300'><BsLinkedin className='inline-block' size={40}></BsLinkedin></a>
+                        <a href='https://github.com/jayliang1234' className=' text-red-500 hover:text-blue-500 transition-colors duration-300'><FaGithubSquare className='inline-block ml-2' size={45}></FaGithubSquare></a>
                     </ul>
                 </ul>
             </div>
