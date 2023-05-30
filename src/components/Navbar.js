@@ -1,6 +1,6 @@
 const Navbar = () =>{
     return(
-        <div className="relative justify-center bg-slate-200 h-20 w-full">
+        <div className="relative justify-center bg-slate-200 h-20 w-full z-10">
             <ul className="flex items-center z-[10] absolute w-full justify-center">
                 <li className="mt-6 hover:border-b-2 hover:border-fuchsia-600">
                   <a href="/Portfolio" className="text-xl">Skills</a>
