@@ -5,7 +5,7 @@ import Home from './components/Home';
 function App() {
   return (
     <Router>
-      <Navbar/>
+      {/*<Navbar/>*/}
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="/Portfolio" element={<Home />} />
