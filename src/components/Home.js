@@ -72,7 +72,7 @@ const Home = () => {
                 <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>MySQL</div>
             </div>
             {/* Projects section */}
-            <div className='relative flex justify-center text-5xl bg-white pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Projects</div>
+            <div className='relative flex justify-center text-5xl bg-white pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Project</div>
             <div className='flex relative w-full h-full bg-white px-[10%] flex-wrap justify-evenly pb-[5%]'>
                 <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-950 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleFitcheck}>
                     <img className='w-full h-full object-contain ' alt='FitCheck' src={FitCheckLogo}></img>
