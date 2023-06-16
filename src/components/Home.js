@@ -2,13 +2,29 @@ import React from 'react';
 import pfp from '../assets/pfp.png'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithubSquare} from 'react-icons/fa'
-import FitCheck from '../assets/logo.png'
+import FitCheckLogo from '../assets/logo.png'
 import Amungo from '../assets/amungo.png'
 import League from '../assets/League.png'
+import { useState} from "react";
+import FitCheckModal from '../modals/Fitcheck.js'
+import AmungoModal from '../modals/Amungo.js'
+import LeagueModal from '../modals/LeagueAPI.js'
 
 const Home = () => {
+    const [FCModal,setFCModal] = useState(false);
+    const [AModal,setAModal] = useState(false);
+    const [LeagueAPIModal,setLeagueModal] = useState(false);
+    const toggleFitcheck = () =>{
+        setFCModal(!FCModal);
+    }
+    const toggleAmungo = () =>{
+        setAModal(!AModal);
+    }
+    const toggleLeagueAPI = () =>{
+        setLeagueModal(!LeagueAPIModal);
+    }
     return(
-        <div className=''>
+        <div>
             {/* Picture */}
             <div className='relative flex w-full h-screen bg-neutral-950 items-center justify-center flex-col'>
                 <div className='w-[200px] rounded-full min-w-[200px] pointer-events-none select-none'>
@@ -58,18 +74,20 @@ const Home = () => {
             {/* Projects section */}
             <div className='relative flex justify-center text-5xl bg-white pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Projects</div>
             <div className='flex relative w-full h-full bg-white px-[10%] flex-wrap justify-evenly pb-[5%]'>
-                <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-950 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button'>
-                    <img className='w-full h-full object-contain ' alt='FitCheck' src={FitCheck}></img>
+                <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-950 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleFitcheck}>
+                    <img className='w-full h-full object-contain ' alt='FitCheck' src={FitCheckLogo}></img>
                 </div>
-                <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>
+                <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleAmungo}>
                     <img className='w-full h-full object-contain' alt='Amungo' src={Amungo}></img>
                 </div>
-                <div className='min-h-[250px] min-w-[250px] w-[250px] flex flex-col items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>
-                    <img className='w-full h-full object-Fill' alt='League' src={League}></img>
-                    <text>League API</text>
+                <div className='min-h-[250px] min-w-[250px] w-[250px] flex flex-col items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleLeagueAPI}>
+                        <img className='w-full h-full object-Fill' alt='League' src={League}></img>
+                        <text>League API</text>
                 </div>
             </div>
-
+            <FitCheckModal FCModal = {FCModal} setFCModal={setFCModal}/>
+            <AmungoModal AModal = {AModal} setAModal={setAModal}/>
+            <LeagueModal LeagueAPIModal = {LeagueAPIModal} setLeagueModal={setLeagueModal}/>
         </div>
         
     )
