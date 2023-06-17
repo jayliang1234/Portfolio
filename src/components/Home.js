@@ -9,7 +9,7 @@ import { useState} from "react";
 import FitCheckModal from '../modals/Fitcheck.js'
 import AmungoModal from '../modals/Amungo.js'
 import LeagueModal from '../modals/LeagueAPI.js'
-
+import background from '../assets/background.mp4'
 const Home = () => {
     const [FCModal,setFCModal] = useState(false);
     const [AModal,setAModal] = useState(false);
@@ -27,13 +27,14 @@ const Home = () => {
         <div>
             {/* Picture */}
             <div className='relative flex w-full h-screen bg-neutral-950 items-center justify-center flex-col'>
+                <video className='absolute top-0 left-0 object-cover w-full h-full' src={background} autoPlay loop muted></video>
                 <div className='w-[200px] rounded-full min-w-[200px] pointer-events-none select-none'>
-                    <img className='w-full h-[200px] rounded-full object-cover' alt="myProfile" src={pfp}></img>
+                    <img className='relative w-full h-[200px] rounded-full object-cover z-10' alt="myProfile" src={pfp}></img>
                 </div>
                 <div className='texting text-4xl text-cyan-600 mt-6' style={{ fontFamily: "'Kaushan Script', cursive", transform: 'rotate(-5deg)' }}>
                     ― Jay Liang ―
                 </div>
-                <div className='text-4x1 text-white mt-6' style={{fontFamily: 'cursive'}}>
+                <div className='relative z-10 text-4x1 text-white mt-6' style={{fontFamily: 'cursive'}}>
                     software engineer
                 </div>
             </div>
@@ -48,11 +49,11 @@ const Home = () => {
                         <div className='pb-10'>
                             <text className='inline-block font-bold ml-10'>Email: </text>
                             <text className='inline-block ml-[60px] text-gray-400 pb-10'>jay.liang74@myhunter.cuny.edu</text>
-                            <div>
-                                <text className='text-4xl relative 2xl:left-[450px] 2xl:bottom-[130px] ml-10'>Hey, thanks for stopping by! </text>
+                            <div className='max-w-[800px]'>
+                                <p className='text-4xl relative 2xl:left-[450px] 2xl:bottom-[130px] ml-10'>Hey, thanks for stopping by! </p>
                             </div>
                             <p className='relative mt-7 w-[50%] min-w-[500px] 2xl:left-[450px] 2xl:bottom-[130px] ml-10'>I am a recent graduate of Hunter College, where I earned a Bachelor of Arts degree in computer science. My aspiration is to leverage my skills and knowledge as a software engineer in a dynamic and challenging role within a renowned tech company.</p>
-                            <div className='relative 2xl:left-[450px] 2xl:bottom-[100px] ml-10 pb-10'>
+                            <div className='relative 2xl:left-[450px] 2xl:bottom-[100px] ml-10 pb-10 max-w-[500px]'>
                                 <a href='https://www.linkedin.com/in/jay-liang-205420197/' className='text-red-500 hover:text-blue-500 transition-colors duration-300'><BsLinkedin className='inline-block' size={40}></BsLinkedin></a>
                                 <a href='https://github.com/jayliang1234' className='text-red-500 hover:text-blue-500 transition-colors duration-300'><FaGithubSquare className='inline-block ml-2' size={45}></FaGithubSquare></a>
                             </div>
