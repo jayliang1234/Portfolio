@@ -1,5 +1,5 @@
 import React from 'react';
-import pfp from '../assets/pfp.png'
+import pfp from '../assets/pfp2.png'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithubSquare} from 'react-icons/fa'
 import FitCheckLogo from '../assets/logo.png'
@@ -27,7 +27,7 @@ const Home = () => {
         <div>
             {/* Picture */}
             <div className='relative flex w-full h-screen bg-neutral-950 items-center justify-center flex-col'>
-                <video className='absolute top-0 left-0 object-cover w-full h-full' src={background} autoPlay loop muted></video>
+                <video className='absolute object-cover w-full h-full' src={background} autoPlay loop muted></video>
                 <div className='w-[200px] rounded-full min-w-[200px] pointer-events-none select-none'>
                     <img className='relative w-full h-[200px] rounded-full object-cover z-10' alt="myProfile" src={pfp}></img>
                 </div>
