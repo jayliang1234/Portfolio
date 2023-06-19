@@ -52,7 +52,7 @@ const Home = () => {
                             <div className='max-w-[800px]'>
                                 <p className='text-4xl relative 2xl:left-[450px] 2xl:bottom-[130px] ml-10'>Hey, thanks for stopping by! </p>
                             </div>
-                            <p className='relative mt-7 w-[50%] min-w-[500px] 2xl:left-[450px] 2xl:bottom-[130px] ml-10'>I am a recent graduate of Hunter College, where I earned a Bachelor of Arts degree in computer science. My aspiration is to leverage my skills and knowledge as a software engineer in a dynamic and challenging role within a renowned tech company.</p>
+                            <p className='relative mt-7 w-[50%] 2xl:left-[450px] 2xl:bottom-[130px] ml-10'>I am a recent graduate of Hunter College, where I earned a Bachelor of Arts degree in computer science. My aspiration is to leverage my skills and knowledge as a software engineer in a dynamic and challenging role within a renowned tech company.</p>
                             <div className='relative 2xl:left-[450px] 2xl:bottom-[100px] ml-10 pb-10 max-w-[500px]'>
                                 <a href='https://www.linkedin.com/in/jay-liang-205420197/' className='text-red-500 hover:text-blue-500 transition-colors duration-300'><BsLinkedin className='inline-block' size={40}></BsLinkedin></a>
                                 <a href='https://github.com/jayliang1234' className='text-red-500 hover:text-blue-500 transition-colors duration-300'><FaGithubSquare className='inline-block ml-2' size={45}></FaGithubSquare></a>
