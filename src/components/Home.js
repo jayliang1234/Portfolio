@@ -27,7 +27,7 @@ const Home = () => {
         <div>
             {/* Picture */}
             <div className='relative flex w-full h-screen bg-neutral-950 items-center justify-center flex-col'>
-                <video className='absolute object-cover w-full h-full' src={background} autoPlay loop muted controls={false} playsInline></video>
+                <video className='absolute object-cover w-full h-full' src={background} autoPlay loop muted controls={false}></video>
                 <div className='w-[200px] rounded-full min-w-[200px] pointer-events-none select-none'>
                     <img className='relative w-full h-[200px] rounded-full object-cover z-10' alt="myProfile" src={pfp}></img>
                 </div>
