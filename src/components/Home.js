@@ -1,5 +1,5 @@
 import React from 'react';
-import pfp from '../assets/pfp2.png'
+import pfp from '../assets/pfp.png'
 import {BsLinkedin} from 'react-icons/bs'
 import {FaGithubSquare} from 'react-icons/fa'
 import FitCheckLogo from '../assets/logo.png'
