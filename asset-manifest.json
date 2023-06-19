@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.a9f813bf.css",
-    "main.js": "/Portfolio/static/js/main.fd00ac2b.js",
+    "main.css": "/Portfolio/static/css/main.ae519a99.css",
+    "main.js": "/Portfolio/static/js/main.27e63291.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio/static/js/787.1ed0c42c.chunk.js",
     "static/media/FitCheckDemo.mp4": "/Portfolio/static/media/FitCheckDemo.40f03cee97761ba1b8e8.mp4",
     "static/media/Amungo.mp4": "/Portfolio/static/media/Amungo.b80a52459692bd7b9416.mp4",
     "static/media/background.mp4": "/Portfolio/static/media/background.b4ced42bd7fdad5497a9.mp4",
-    "static/media/pfp2.png": "/Portfolio/static/media/pfp2.2d8025de6e32cf060507.png",
+    "static/media/pfp.png": "/Portfolio/static/media/pfp.2d8025de6e32cf060507.png",
     "static/media/League.png": "/Portfolio/static/media/League.bae3e02beb158e98319c.png",
+    "static/media/Champions.png": "/Portfolio/static/media/Champions.f0ff51b53cdb747d7ec1.png",
     "static/media/amungo.png": "/Portfolio/static/media/amungo.ad2d982717ddc9ef7135.png",
     "static/media/logo.png": "/Portfolio/static/media/logo.da23ca77e0199f40d631.png",
     "index.html": "/Portfolio/index.html",
-    "main.a9f813bf.css.map": "/Portfolio/static/css/main.a9f813bf.css.map",
-    "main.fd00ac2b.js.map": "/Portfolio/static/js/main.fd00ac2b.js.map",
+    "main.ae519a99.css.map": "/Portfolio/static/css/main.ae519a99.css.map",
+    "main.27e63291.js.map": "/Portfolio/static/js/main.27e63291.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a9f813bf.css",
-    "static/js/main.fd00ac2b.js"
+    "static/css/main.ae519a99.css",
+    "static/js/main.27e63291.js"
   ]
 }
