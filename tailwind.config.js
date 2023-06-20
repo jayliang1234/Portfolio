@@ -17,7 +17,7 @@ module.exports = {
 
       '2xl': {'min': '1536px'},
       // => @media (min-width: 1536px) { ... }
-      'tall': { 'raw': '(max-height: 1000px)' },
+      'mobile': { 'raw': '(max-height: 900px)' },
         // => @media (min-height: 800px) { ... }
     },
     extend: {},

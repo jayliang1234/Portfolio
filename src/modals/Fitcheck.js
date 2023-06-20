@@ -10,7 +10,7 @@ const FitCheckModal= ({ FCModal, setFCModal }) => {
         <div className={`relative z-10 ${FCModal ? "" : "hidden"}`} style={{fontFamily: "'Space Mono', Arial, serif"}}>
             <div className="fixed inset-0 bg-black bg-opacity-70 transition-opacity -z-10" onClick={toggleModal}>
             </div>
-            <div className="fixed w-[50%] min-h-[60%] left-[25%] top-[20%] bg-white transition-opacity flex flex-col rounded-sm">
+            <div className="fixed w-[50%] min-h-[60%] left-[25%] top-[20%] mobile:w-[90%] mobile:left-[5%] bg-white transition-opacity flex flex-col rounded-sm">
                 <div className="relative flex w-full">
                     <div className="flex-grow"></div>
                     <div className="flex-grow text-2xl ml-2 font-bold">Fitcheck</div>
