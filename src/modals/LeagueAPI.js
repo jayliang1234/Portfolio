@@ -16,7 +16,7 @@ const LeagueModal= ({ LeagueAPIModal, setLeagueModal }) => {
                     <div className="flex-grow text-2xl ml-6 font-bold">LeagueAPI</div>
                     <BiX className="self-end" size={28} role="button" onClick={toggleModal}></BiX>
                 </div>
-                <div className="relative flex w-[90%] flex-wrap ml-2 pt-5">
+                <div className="relative flex w-[95%] flex-wrap ml-3 pt-5">
                     Using MySQL Workbench and MySQL Servers, along with Visual Studio's ASP.NET Core Web API template. I was able to Develop a comprehensive League of Legends API, encompassing two tables: Champions and Abilities.
                 </div>
                 <div className="flex justify-evenly">
@@ -25,8 +25,8 @@ const LeagueModal= ({ LeagueAPIModal, setLeagueModal }) => {
                 <div className="flex justify-evenly w-full h-full">
                     <img className="object-cover" alt="champions" src={Champions}></img>
                 </div>
-                <div className="mt-5 ml-2"> Technologies used: PostMan, MySQL Workbench/Server, ASP.NET Core Web API </div>
-                <div className="ml-2">
+                <div className="mt-5 ml-3"> Technologies used: PostMan, MySQL Workbench/Server, ASP.NET Core Web API </div>
+                <div className="ml-3">
                     More info: <a className='relative text-red-500 hover:text-blue-500 transition-colors duration-300' href='https://github.com/jayliang1234/LeagueChampionsAPI'><FaGithubSquare className='inline-block ml-2' size={40}></FaGithubSquare></a>
                 </div>
             </div>

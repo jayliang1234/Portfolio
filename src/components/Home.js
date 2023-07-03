@@ -10,6 +10,7 @@ import FitCheckModal from '../modals/Fitcheck.js'
 import AmungoModal from '../modals/Amungo.js'
 import LeagueModal from '../modals/LeagueAPI.js'
 import background from '../assets/background.mp4'
+import skillsbg from '../assets/skillsbg.jpg'
 const Home = () => {
     const [FCModal,setFCModal] = useState(false);
     const [AModal,setAModal] = useState(false);
@@ -61,16 +62,19 @@ const Home = () => {
                     </div>
             </div>
             {/* Skills section */}
-            <div className='relative flex justify-center text-5xl bg-neutral-950 pt-[3%] pb-[3%] text-white' style={{fontFamily: "'Space Mono', Arial, serif"}}>Skills</div>
-            <div className='flex relative w-full h-full bg-neutral-950 px-[10%] flex-wrap justify-evenly pb-[5%]'>
-                <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>C++</div>
-                <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>JavaScript</div>
-                <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>HTML</div>
-            </div>
-            <div className='flex relative w-full h-full bg-neutral-950 px-[10%] flex-wrap justify-evenly pb-[5%]'>
-                <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>CSS</div>
-                <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>Python</div>
-                <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>MySQL</div>
+            <div>
+                <img className='absolute object-cover w-full h-full' alt='skills' src={skillsbg}></img>
+                <div className='relative flex justify-center text-5xl pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Skills</div>
+                <div className='flex relative w-full h-full px-[10%] flex-wrap justify-evenly pb-[5%]'>
+                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>C++</div>
+                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>JavaScript</div>
+                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>HTML</div>
+                </div>
+                <div className='flex relative w-full h-full px-[10%] flex-wrap justify-evenly pb-[5%]'>
+                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>CSS</div>
+                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>Python</div>
+                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>MySQL</div>
+                </div>
             </div>
             {/* Projects section */}
             <div className='relative flex justify-center text-5xl bg-white pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Projects</div>

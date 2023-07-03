@@ -17,13 +17,13 @@ const AmungoModal= ({ AModal, setAModal }) => {
                     <div className="flex-grow text-2xl ml-6 font-bold">Amungo</div>
                     <BiX className="self-end" size={28} role="button" onClick={toggleModal}></BiX>
                 </div>
-                <div className="relative flex w-[90%] flex-wrap ml-2 pt-5">
+                <div className="relative flex w-[95%] flex-wrap ml-3 pt-5">
                     Amungo is a game similar to DinoRun where the objective of the game is to survive as long as possible. I created this game using a game engine we created in my gameengines class.
                 </div>
                 <div className="text-3xl self-center pt-1 font-bold">Gameplay</div>
                 <video className="w-[60%] bg-black self-center" src={Amungo} autoPlay loop muted controls></video>
-                <div className="mt-5 ml-2"> Technologies used: OpenGL, Glad, Stbi, Glfw, Cmake</div>
-                <div className="ml-2">
+                <div className="mt-5 ml-3"> Technologies used: OpenGL, Glad, Stbi, Glfw, Cmake</div>
+                <div className="ml-3">
                 More info: <a className='relative text-red-500 hover:text-blue-500 transition-colors duration-300' href='https://github.com/jayliang1234/Amungo'><FaGithubSquare className='inline-block ml-2' size={40}></FaGithubSquare></a>
                 </div>
             </div>
