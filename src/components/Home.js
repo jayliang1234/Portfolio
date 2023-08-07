@@ -61,18 +61,20 @@ const Home = () => {
                     </div>
             </div>
             {/* Skills section */}
-            <div>
-                <div className='relative flex justify-center text-5xl pt-[3%] pb-[3%] text-blue-50 bg-purple-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Skills</div>
-                <div className='flex relative w-full h-full px-[10%] flex-wrap justify-evenly pb-[5%] bg-purple-400'>
-                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>C++</div>
-                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>JavaScript</div>
-                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>HTML</div>
+            <div style={{fontFamily: "'Space Mono', Arial, serif"}}>
+                <div className='relative flex justify-center text-5xl pt-[5%] pb-[3%] text-blue-50 bg-neutral-900'>Skills</div>
+                <div className='flex relative w-full h-full px-[10%] flex-wrap justify-evenly pb-[5%] bg-neutral-900 text-white'>
+                    <div className='rounded-full min-h-[150px] min-w-[150px] flex items-center justify-center bg-[#008080] text-3xl border-8'>C++</div>
+                    <div className='rounded-full min-h-[150px] min-w-[150px] flex items-center justify-center bg-[#008080] text-3xl border-8'>JS</div>
+                    <div className='rounded-full min-h-[150px] min-w-[150px] flex items-center justify-center bg-[#008080] text-3xl border-8'>HTML</div>
                 </div>
-                <div className='flex relative w-full h-full px-[10%] flex-wrap justify-evenly pb-[5%] bg-purple-400'>
-                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>CSS</div>
-                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>Python</div>
-                    <div className='rounded-full min-h-[250px] min-w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000'>MySQL</div>
+                <div className='flex relative w-full h-full px-[10%] flex-wrap justify-evenly pb-[5%] bg-neutral-900 text-white'>
+                    <div className='rounded-full min-h-[150px] min-w-[150px] flex items-center justify-center bg-[#008080] text-3xl border-8'>CSS</div>
+                    <div className='rounded-full min-h-[150px] min-w-[150px] flex items-center justify-center bg-[#008080] text-3xl border-8'>Python</div>
+                    <div className='rounded-full min-h-[150px] min-w-[150px] flex items-center justify-center bg-[#008080] text-3xl border-8'>SQL</div>
                 </div>
+                <div className="text-center bg-neutral-900 text-white text-3xl"> Other Skills </div>
+                <div className="text-center bg-neutral-900 text-white text-1xl pb-[5%]"> React.js • Express.js • Firebase • TailwindCSS • API • OpenGL</div>
             </div>
             {/* Projects section */}
             <div className='relative flex justify-center text-5xl bg-white pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Projects</div>
