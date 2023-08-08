@@ -23,6 +23,16 @@ const Home = () => {
     const toggleLeagueAPI = () =>{
         setLeagueModal(!LeagueAPIModal);
     }
+    const ProjectHover = ({func, tip, pic, text = "tooltip", bg="color"} ) => {
+        return(
+            <div className={`min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center text-3xl border-8 hover:border-blue-600 transition-colors duration-500 group ${bg} hover:bg-slate-50`} role='button' onClick={func}>
+                <img className='w-full h-full object-contain group-hover:scale-0' alt={tip} src={pic}></img>
+                <span className="absolute scale-0 group-hover:scale-100 justify-center items-center">
+                    <div className="text-xl">{text}</div>
+                </span>
+            </div>
+        )
+    };
     return(
         <div>
             {/* Picture */}
@@ -79,16 +89,9 @@ const Home = () => {
             {/* Projects section */}
             <div className='relative flex justify-center text-5xl bg-white pt-[3%] pb-[3%] text-red-400' style={{fontFamily: "'Space Mono', Arial, serif"}}>Projects</div>
             <div className='flex relative w-full h-full bg-white px-[10%] flex-wrap justify-evenly pb-[5%]'>
-                <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-950 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleFitcheck}>
-                    <img className='w-full h-full object-contain ' alt='FitCheck' src={FitCheckLogo}></img>
-                </div>
-                <div className='min-h-[250px] min-w-[250px] w-[250px] flex items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleAmungo}>
-                    <img className='w-full h-full object-contain' alt='Amungo' src={Amungo}></img>
-                </div>
-                <div className='min-h-[250px] min-w-[250px] w-[250px] flex flex-col items-center justify-center bg-slate-50 text-3xl border-8 hover:border-blue-600 transition-colors duration-1000' role='button' onClick={toggleLeagueAPI}>
-                        <img className='w-full h-full object-Fill' alt='League' src={League}></img>
-                        <text>League API</text>
-                </div>
+                <ProjectHover tip='FitCheck' pic={FitCheckLogo} text="Fitcheck" func={toggleFitcheck} bg="bg-slate-950"/>
+                <ProjectHover tip='Amungo' pic={Amungo} text="Amungo" func={toggleAmungo} bg="bg-slate-50"/>
+                <ProjectHover tip='LeaugeAPI' pic={League} text="League of Legends API" func={toggleLeagueAPI} bg="bg-slate-50"/>
             </div>
             <FitCheckModal FCModal = {FCModal} setFCModal={setFCModal}/>
             <AmungoModal AModal = {AModal} setAModal={setAModal}/>
