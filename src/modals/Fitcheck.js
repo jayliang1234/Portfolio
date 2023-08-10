@@ -1,5 +1,6 @@
 import React from "react";
 import { BiX } from "react-icons/bi"
+import {FaGithubSquare} from 'react-icons/fa'
 import FitCheckDemo from '../assets/FitCheckDemo.mp4'
 
 const FitCheckModal= ({ FCModal, setFCModal }) => {
@@ -22,6 +23,9 @@ const FitCheckModal= ({ FCModal, setFCModal }) => {
                 <div className="text-3xl self-center pt-1 font-bold">Short Demo</div>
                 <video className="w-[60%] bg-black self-center" src={FitCheckDemo} autoPlay loop muted controls></video>
                 <div className="mt-4 ml-3"> Technologies used: React.js, Express.js, Firebase Auth/Storage, Google Vision API, TailwindCSS</div>
+                <div className="ml-3">
+                    More info: <a className='relative text-red-500 hover:text-blue-500 transition-colors duration-300' href='https://github.com/jayliang1234/fitcheck'><FaGithubSquare className='inline-block ml-2' size={40}></FaGithubSquare></a>
+                </div>
             </div>
         </div>
     );
